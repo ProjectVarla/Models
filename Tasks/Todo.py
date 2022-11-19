@@ -6,13 +6,13 @@ from pydantic import BaseModel
 class Todo:
     class Base(BaseModel):
         text: str
+        archived: bool
+        pinned: bool
+        checked: bool
 
     class Object(Base):
         id: int
         task_id: int
-        archived: bool
-        pinned: bool
-        checked: bool
 
     class Edit(BaseModel):
         text: Optional[str]
