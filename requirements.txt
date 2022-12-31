@@ -1,3 +1,7 @@
 fastapi
+<<<<<<< HEAD
 pydantic
 requests
+=======
+requests
+>>>>>>> refs/remotes/origin/main
